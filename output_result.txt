@@ -1,0 +1,10 @@
+Fish1: body=60, tail=11 → salmon
+Fish2: body=68, tail=18 → salmon
+Fish3: body=80, tail=15 → salmon
+Fish4: body=75, tail=13 → salmon
+Fish5: body=84, tail=20 → salmon
+Fish6: body=99, tail=12 → seabass
+Fish7: body=102, tail=9 → seabass
+Fish8: body=110, tail=5 → seabass
+Fish9: body=85, tail=8 → seabass
+Fish10: body=82, tail=7 → seabass

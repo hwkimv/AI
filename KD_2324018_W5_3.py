@@ -124,7 +124,7 @@ def main():
     # 처음 세대(무작위 개체들)
     pop = []
     for i in range(POP):
-        pop.append(make_individual())
+        pop.append(make_individual()) # 개체 추가
 
     # 세대별 학습 반복 시작
     for gen in range(1, GENERATIONS + 1):
@@ -141,21 +141,18 @@ def main():
         # 이번 세대에서 가장 좋은 개체 찾기
         best_idx = 0
         for i in range(1, POP):
-            if fits[i] > fits[best_idx]:
+            if fits[i] > fits[best_idx]: # 적합도가 더 높으면
                 best_idx = i
 
         # 최고 개체 정보 (오류율, 파라미터)
         best_params = pop[best_idx]
-        train_err = error(best_params, train_data)  # 학습 오류율
-        test_err = error(best_params, test_data)    # 테스트 오류율
+        train_err = error(best_params, train_data)  # 가장 좋은 개체의 학습 오류율
+        test_err = error(best_params, test_data)    # 가장 좋은 개체의 테스트 오류율
 
         # 출력 형식
         print("[세대", gen, "]",
               "학습 오류율 =", round(train_err * 100, 1), "% |",
-              "테스트 오류율 =", round(test_err * 100, 1), "% |",
-              "최적 파라미터 =", [round(best_params[0], 3),
-                            round(best_params[1], 3),
-                            round(best_params[2], 3)])
+              "테스트 오류율 =", round(test_err * 100, 1), "%")
 
         # 다음 세대 만들기 (엘리트 보존)
         new_pop = []
@@ -163,11 +160,11 @@ def main():
 
         # 나머지 개체들 생성
         while len(new_pop) < POP:
-            p1 = select_parent(pop, fits)
-            p2 = select_parent(pop, fits)
-            child = crossover(p1, p2)
-            mutate(child)
-            new_pop.append(child)
+            p1 = select_parent(pop, fits) # 부모1 선택
+            p2 = select_parent(pop, fits) # 부모2 선택
+            child = crossover(p1, p2) # 교차로 자식 생성
+            mutate(child) # 돌연변이 적용
+            new_pop.append(child) # 새 개체 추가
 
         pop = new_pop  # 세대 교체
 

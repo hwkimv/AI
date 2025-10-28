@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="60d0c814-cb52-4a73-b9ad-165a79f88e56" name="변경" comment="week3">
-      <change afterPath="$PROJECT_DIR$/KD_2324018_W4_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/W3_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/W3_3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KD_2324018_W8_3.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,6 +35,10 @@
     &quot;accountId&quot;: &quot;06dcf691-b145-47f0-b656-27e23c2f22df&quot;
   }
 }</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -44,31 +46,32 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.KD_2324018_W2_3.executor&quot;: &quot;Run&quot;,
-    &quot;Python.KD_2324018_W3_3.executor&quot;: &quot;Run&quot;,
-    &quot;Python.KD_2324018_W4_3.executor&quot;: &quot;Run&quot;,
-    &quot;Python.W3_2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.W3_3.executor&quot;: &quot;Run&quot;,
-    &quot;Python.W3_3_2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/hwkim/Desktop/대학/3-2/인공지능 기초/AI&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.KD_2324018_W2_3.executor": "Run",
+    "Python.KD_2324018_W3_3.executor": "Run",
+    "Python.KD_2324018_W4_3.executor": "Run",
+    "Python.KD_2324018_W8_3.executor": "Run",
+    "Python.W3_2.executor": "Run",
+    "Python.W3_3.executor": "Run",
+    "Python.W3_3_2.executor": "Run",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/hwkim/Desktop/대학/3-2/인공지능 기초/AI",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "show.migrate.to.gradle.popup": "false",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="AI" />
@@ -129,6 +132,11 @@
       <workItem from="1758600867612" duration="312000" />
       <workItem from="1758601202324" duration="225000" />
       <workItem from="1758601979044" duration="7775000" />
+      <workItem from="1759298855776" duration="95000" />
+      <workItem from="1759385595940" duration="2000" />
+      <workItem from="1760416583259" duration="614000" />
+      <workItem from="1761543012688" duration="36000" />
+      <workItem from="1761616649271" duration="1256000" />
     </task>
     <task id="LOCAL-00001" summary="week2">
       <option name="closed" value="true" />

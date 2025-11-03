@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="60d0c814-cb52-4a73-b9ad-165a79f88e56" name="변경" comment="week5">
+      <change afterPath="$PROJECT_DIR$/2324018.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KD_2324018_W5_3.py" beforeDir="false" afterPath="$PROJECT_DIR$/KD_2324018_W5_3.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,32 +46,32 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.KD_2324018_W2_3.executor": "Run",
-    "Python.KD_2324018_W3_3.executor": "Run",
-    "Python.KD_2324018_W4_3.executor": "Run",
-    "Python.KD_2324018_W5_3.executor": "Run",
-    "Python.W3_2.executor": "Run",
-    "Python.W3_3.executor": "Run",
-    "Python.W3_3_2.executor": "Run",
-    "Python.main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/hwkim/Desktop/univ/3-2/클라우드 컴퓨팅/week5",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "show.migrate.to.gradle.popup": "false",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.KD_2324018_W2_3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.KD_2324018_W3_3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.KD_2324018_W4_3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.KD_2324018_W5_3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.W3_2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.W3_3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.W3_3_2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/hwkim/Desktop/univ/3-2/클라우드 컴퓨팅/week5&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="AI" />
@@ -138,7 +138,11 @@
       <workItem from="1760281494531" duration="3692000" />
       <workItem from="1760369659051" duration="602000" />
       <workItem from="1760370619669" duration="113000" />
-      <workItem from="1760898555667" duration="2805000" />
+      <workItem from="1760898555667" duration="3255000" />
+      <workItem from="1761161952447" duration="255000" />
+      <workItem from="1761192723674" duration="5000" />
+      <workItem from="1762086025521" duration="3000" />
+      <workItem from="1762182396107" duration="70000" />
     </task>
     <task id="LOCAL-00001" summary="week2">
       <option name="closed" value="true" />
@@ -172,7 +176,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760901235544</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="week5">
+      <option name="closed" value="true" />
+      <created>1760901436037</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1760901436037</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

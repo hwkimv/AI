@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="60d0c814-cb52-4a73-b9ad-165a79f88e56" name="변경" comment="week5">
       <change afterPath="$PROJECT_DIR$/2324018.py" afterDir="false" />
-    <list default="true" id="60d0c814-cb52-4a73-b9ad-165a79f88e56" name="변경" comment="week3">
-      <change afterPath="$PROJECT_DIR$/KD_2324018_W8_3.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,6 +35,10 @@
     &quot;accountId&quot;: &quot;06dcf691-b145-47f0-b656-27e23c2f22df&quot;
   }
 }</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -49,6 +51,7 @@
     &quot;Python.KD_2324018_W2_3.executor&quot;: &quot;Run&quot;,
     &quot;Python.KD_2324018_W3_3.executor&quot;: &quot;Run&quot;,
     &quot;Python.KD_2324018_W4_3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.KD_2324018_W5_3.executor&quot;: &quot;Run&quot;,
     &quot;Python.W3_2.executor&quot;: &quot;Run&quot;,
     &quot;Python.W3_3.executor&quot;: &quot;Run&quot;,
     &quot;Python.W3_3_2.executor&quot;: &quot;Run&quot;,
@@ -58,7 +61,7 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/hwkim/Desktop/대학/3-2/인공지능 기초/AI&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/hwkim/Desktop/univ/3-2/클라우드 컴퓨팅/week5&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -97,8 +100,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-b598e85cdad2-JavaScript-PY-252.25557.178" />
-        <option value="bundled-python-sdk-ce6832f46686-7b97d883f26b-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.25557.178" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-PY-243.26574.90" />
+        <option value="bundled-python-sdk-c1fac28bca04-4df51de95216-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.26574.90" />
       </set>
     </attachedChunks>
   </component>
@@ -129,6 +132,17 @@
       <workItem from="1758600867612" duration="312000" />
       <workItem from="1758601202324" duration="225000" />
       <workItem from="1758601979044" duration="7775000" />
+      <workItem from="1758628252129" duration="54000" />
+      <workItem from="1759219050091" duration="25000" />
+      <workItem from="1760281205199" duration="277000" />
+      <workItem from="1760281494531" duration="3692000" />
+      <workItem from="1760369659051" duration="602000" />
+      <workItem from="1760370619669" duration="113000" />
+      <workItem from="1760898555667" duration="3255000" />
+      <workItem from="1761161952447" duration="255000" />
+      <workItem from="1761192723674" duration="5000" />
+      <workItem from="1762086025521" duration="3000" />
+      <workItem from="1762182396107" duration="70000" />
     </task>
     <task id="LOCAL-00001" summary="week2">
       <option name="closed" value="true" />
@@ -154,7 +168,23 @@
       <option name="project" value="LOCAL" />
       <updated>1757493191723</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="week5">
+      <option name="closed" value="true" />
+      <created>1760901235544</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1760901235544</updated>
+    </task>
+    <task id="LOCAL-00005" summary="week5">
+      <option name="closed" value="true" />
+      <created>1760901436037</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1760901436037</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,15 +205,17 @@
     <MESSAGE value="week1" />
     <MESSAGE value="week2" />
     <MESSAGE value="week3" />
-    <option name="LAST_COMMIT_MESSAGE" value="week3" />
+    <MESSAGE value="week5" />
+    <option name="LAST_COMMIT_MESSAGE" value="week5" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/AI$main.coverage" NAME="main 커버리지 결과" MODIFIED="1757995856877" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/AI$KD_2324018_W4_3.coverage" NAME="KD_2324018_W4_3 커버리지 결과" MODIFIED="1760285962483" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/AI$KD_2324018_W3_3.coverage" NAME="KD_2324018_W3_3 커버리지 결과" MODIFIED="1757907880561" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/AI$main.coverage" NAME="main 커버리지 결과" MODIFIED="1760285211372" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/AI$KD_2324018_W5_3.coverage" NAME="KD_2324018_W5_3 커버리지 결과" MODIFIED="1760901340427" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/AI$W3_3.coverage" NAME="W3_3 커버리지 결과" MODIFIED="1758005802636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/AI$KD_2324018_W4_3.coverage" NAME="KD_2324018_W4_3 커버리지 결과" MODIFIED="1758610251738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/AI$W3_3_2.coverage" NAME="W3_3_2 커버리지 결과" MODIFIED="1757907893168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/AI$KD_2324018_W2_3.coverage" NAME="KD_2324018_W2_3 커버리지 결과" MODIFIED="1757398590002" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/AI$KD_2324018_W3_3.coverage" NAME="KD_2324018_W3_3 커버리지 결과" MODIFIED="1757907880561" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/AI$W3_2.coverage" NAME="W3_2 커버리지 결과" MODIFIED="1758004677313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

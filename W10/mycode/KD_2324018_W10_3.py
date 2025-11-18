@@ -31,7 +31,7 @@ def accuracy(y_true_int, y_pred_int):
 
 # 학습/테스트에서 각각 1000개씩만 사용
 N_TRAIN = 1000
-N_TEST  = 1000
+N_TEST  = 10000
 x_train = x_train[:N_TRAIN]
 y_train = y_train[:N_TRAIN]
 x_test  = x_test[:N_TEST]

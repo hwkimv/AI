@@ -1,0 +1,7 @@
+version=v1	INIT_RANGE=0.01	INIT_LR=0.1	DECAY=0.5	BATCH=1	bestValidMSE=0.011962	bestValidErrorRate=0.014000	MODEL=model.pkl
+version=v1	INIT_RANGE=0.01	INIT_LR=0.1	DECAY=0.5	BATCH=1	bestValidMSE=0.011962	bestValidErrorRate=0.014000	MODEL=model.pkl
+version=v1	INIT_RANGE=0.1	INIT_LR=0.1	DECAY=0.5	BATCH=1	bestValidMSE=0.012455	bestValidErrorRate=0.015000	MODEL=model.pkl
+version=v1	INIT_RANGE=0.01	INIT_LR=0.1	DECAY=0.5	BATCH=1	bestValidMSE=0.011962	bestValidErrorRate=0.014000	MODEL=model.pkl
+version=v1	INIT_RANGE=0.01	INIT_LR=0.1	DECAY=0.2	BATCH=1	bestValidMSE=0.013636	bestValidErrorRate=0.016000	MODEL=model.pkl
+version=v1	INIT_RANGE=0.01	INIT_LR=0.1	DECAY=0.1	BATCH=1	bestValidMSE=0.014365	bestValidErrorRate=0.017000	MODEL=model.pkl
+version=v1	INIT_RANGE=0.01	INIT_LR=0.1	DECAY=0.5	BATCH=1	bestValidMSE=0.011962	bestValidErrorRate=0.014000	MODEL=model.pkl

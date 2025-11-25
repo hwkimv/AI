@@ -1,0 +1,1 @@
+version=v3	INIT_RANGE=0.001	INIT_LR=0.1	DECAY=0.5	BATCH=1	bestValidMSE=0.011943	bestValidErrorRate=0.014000	MODEL=model.pkl

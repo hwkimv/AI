@@ -95,20 +95,26 @@ EPOCHS = 100  # 반복 횟수
 LR = 0.5  # 학습 속도(얼마나 빨리 배우는지)
 
 for epoch in range(EPOCHS):
-    # 입력(문제)과 가중치를 곱해서 점수 만들기
+
+    # 입력(x)과 가중치(W)를 곱해 퍼셉트론의 '점수' Z 계산
     Z = np.dot(x_train, W)
 
-    # 시그모이드로 0~1 사이 값 만들기 (예측값)
-    S = sigmoid(Z)
+    # 시그모이드로 점수를 0~1 사이 값(예측값 O)으로 변환
+    O = sigmoid(Z)
 
-    # 정답과의 차이(오차) 구하기
-    delta = (y_train - S) * (S * (1 - S)) # 틀린정도 * 변화량
+    # 시그모이드 변화량 계산 (얼마나 조심해서 고칠지)
+    sigmoid_deriv = O * (1 - O)
 
-    # 가중치가 얼마나 바뀌어야 하는지 계산
-    # 입력 x 오차
+    # (정답 - 예측)의 차이 = 오차(error)
+    error = y_train - O
+
+    # 오차 × 변화량 = 가중치를 얼마나 고칠지(delta)
+    delta = error * sigmoid_deriv
+
+    # 입력(x)을 이용해 퍼셉트론 전체의 가중치 변화량(grad)을 계산
     grad = np.dot(x_train.T, delta) / len(x_train)
 
-    # 가중치를 조금씩 고쳐주기
+    # 가중치를 조금씩 수정하여 더 정답에 가깝게 만듦
     W = W + LR * grad
 
     # 학습 오류율 출력

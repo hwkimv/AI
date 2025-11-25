@@ -126,8 +126,8 @@ for epoch in range(EPOCHS):
 
 # 학습이 끝난 뒤 테스트 오류율 출력
 
-test_pred = np.argmax(np.dot(x_test, W), axis=1)
-test_acc = accuracy(y_test_int, test_pred)
-test_err = 1 - test_acc
+test_pred = np.argmax(np.dot(x_test, W), axis=1) # 테스트셋 예측값(가장 가능성이 높은 숫자)
+test_acc = accuracy(y_test_int, test_pred) # 테스트셋 정확도
+test_err = 1 - test_acc # 테스트셋 오류율
 
 print("\n[최종] 테스트 오류율 =", test_err)

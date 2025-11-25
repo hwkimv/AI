@@ -4,15 +4,13 @@
 # 비용 함수: 평균 제곱 오차(mean squared error)
 # 학습 알고리즘: SGD(stochastic gradient descent) 미니 배치(mini batch) 방식
 
+
 import copy as cp
 import numpy as np
 import numpy.random as nr
 import pickle as pkl
 
-from matplotlib import pyplot as plt
-
 import mnist_loader as mnist
-from mycode.mnist_viewer import title_text
 
 # 랜덤 시드 고정
 nr.seed(12345)
@@ -28,10 +26,10 @@ _VALID_SAMPLE_NUM = 1000            # 검증(validation) 세트로 사용할 샘
 
 
 # 반복 실험하며 최적화가 필요한 하이퍼 파라미터들
-_INIT_PARAM_RANGE = 0.1             # 파라미터 랜덤 초기화 범위 (-_INIT_PARAM_RANGE ~ _INIT_PARAM_RANGE)
-_INIT_LEARNING_RATE = 10.0          # 초기 학습률
-_LEARNING_RATE_DECAY_FACTOR = 0.1   # 학습률에 대한 감쇠율
-_BATCH_SIZE = 500                   # 한 배치 내 샘플 수
+_INIT_PARAM_RANGE = 0.01             # 파라미터 랜덤 초기화 범위 (-_INIT_PARAM_RANGE ~ _INIT_PARAM_RANGE)
+_INIT_LEARNING_RATE = 0.1          # 초기 학습률
+_LEARNING_RATE_DECAY_FACTOR = 0.5   # 학습률에 대한 감쇠율
+_BATCH_SIZE = 1                  # 한 배치 내 샘플 수
 
 
 # 학습 과정에 일부 영향을 줄 수도 있는 그 밖의 설정값들
@@ -179,8 +177,6 @@ class Model:
 # MNIST 데이터 세트 읽기
 (x_train, y_train), (x_test, y_test) = mnist.load_data()
 
-x_test_original = x_test
-
 # 특징이 0~1 사이의 값이 되도록 scaling
 x_train = x_train / 255.0
 x_test = x_test / 255.0
@@ -298,31 +294,19 @@ for epoch in range(1, _MAX_EPOCH + 1):
 output = 'after training\tbestValidMSE=%.6f\tbestValidErrorRate=%.2f%%' % (bestValidMSE, bestValidErrorRate * 100)
 print(output, flush=True)
 
+# ---- 여기부터 로그 파일에 기록 ----
+VERSION = "v1"  # 버전명만 실행할 때마다 바꿔주면 됨
 
+with open("train_result.txt", "a", encoding="utf-8") as f:
+    f.write(
+        f"version={VERSION}\t"
+        f"INIT_RANGE={_INIT_PARAM_RANGE}\t"
+        f"INIT_LR={_INIT_LEARNING_RATE}\t"
+        f"DECAY={_LEARNING_RATE_DECAY_FACTOR}\t"
+        f"BATCH={_BATCH_SIZE}\t"
+        f"bestValidMSE={bestValidMSE:.6f}\t"
+        f"bestValidErrorRate={bestValidErrorRate:.6f}\t"
+        f"MODEL=model.pkl\n"
+    )
 
 # [실습해볼 내용] 모델 학습 스크립트와 성능 평가 실험 스크립트를 따로 분리하기
-
-# [실습해볼 내용] 최적 모델을 파일에서 불러오기
-flie = open('model.pkl', 'rb')
-model = pkl.load(flie)
-flie.close()
-
-index = int(input("0~9999 사이의 숫자를 입력하세요: "))
-
-#모델의 출력(활성값) 계산:0~1 실수값
-o = model.CalcActivation(x_test[index])
-
-if o >= 0.5:
-    print("is 0")
-else:
-    print("is not 0")
-
-#matplotlib으로 이미지 및 레이블 출력
-#plt.imshow(x_test_original[index], cmap=plt.cm.gray)
-#plt.title(title_text, fontsize=20)
-#plt.show()
-
-# 성능 평가 데이터 세트에 대한 비용(평균 제곱 오차), 오류율 측정
-evaluateMSE, evaluateErrorRate = evaluate(model, x_test, y_test)
-output = 'evaluateMSE=%.6f\tevaluateErrorRate=%.2f%%' % (evaluateMSE, evaluateErrorRate * 100)
-print(output, flush=True)

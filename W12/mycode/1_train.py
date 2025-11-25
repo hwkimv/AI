@@ -295,4 +295,21 @@ print(output, flush=True)
 
 
 
-# [실습해볼 내용] 모델 학습 스크립트와 성능 평가 실험 스크립트를 따로 분리하기
+# 학습 종료 후 검증 데이터 세트에 대한 최적 비용(평균 제곱 오차) 및 오류율 출력
+output = 'after training\tbestValidMSE=%.6f\tbestValidErrorRate=%.2f%%' % (bestValidMSE, bestValidErrorRate * 100)
+print(output, flush=True)
+
+# ---- 여기부터 로그 파일에 기록 ----
+VERSION = "v1"  # 버전명만 실행할 때마다 바꿔주면 됨
+
+with open("train_result.txt", "a", encoding="utf-8") as f:
+    f.write(
+        f"version={VERSION}\t"
+        f"INIT_RANGE={_INIT_PARAM_RANGE}\t"
+        f"INIT_LR={_INIT_LEARNING_RATE}\t"
+        f"DECAY={_LEARNING_RATE_DECAY_FACTOR}\t"
+        f"BATCH={_BATCH_SIZE}\t"
+        f"bestValidMSE={bestValidMSE:.6f}\t"
+        f"bestValidErrorRate={bestValidErrorRate:.6f}\t"
+        f"MODEL=model.pkl\n"
+    )

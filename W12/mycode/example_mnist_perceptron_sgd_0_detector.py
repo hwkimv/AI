@@ -7,6 +7,7 @@
 import copy as cp
 import numpy as np
 import numpy.random as nr
+import pickle as pkl
 
 import mnist_loader as mnist
 
@@ -275,7 +276,10 @@ for epoch in range(1, _MAX_EPOCH + 1):
             bestValidErrorRate = validErrorRate
             
             # [실습해볼 내용] 최적 모델을 파일에 저장하기
-            
+            flie = open('model.pkl', 'wb')
+            pkl.dump(model, flie)
+            flie.close()
+
         # 검증 오류율이 낮아지지 않았다면
         else:
             patientCnt += 1
@@ -294,7 +298,9 @@ print(output, flush=True)
 # [실습해볼 내용] 모델 학습 스크립트와 성능 평가 실험 스크립트를 따로 분리하기
 
 # [실습해볼 내용] 최적 모델을 파일에서 불러오기
-
+flie = open('model.pkl', 'rb')
+model = pkl.load(flie)
+flie.close()
 
 
 # 성능 평가 데이터 세트에 대한 비용(평균 제곱 오차), 오류율 측정

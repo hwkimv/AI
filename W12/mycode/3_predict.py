@@ -303,8 +303,17 @@ print(output, flush=True)
 # [실습해볼 내용] 모델 학습 스크립트와 성능 평가 실험 스크립트를 따로 분리하기
 
 # [실습해볼 내용] 최적 모델을 파일에서 불러오기
-flie = open('model.pkl', 'rb')
-model = pkl.load(flie)
+
+# 어떤 버전 모델을 사용할지 선택
+version = input("사용할 모델 버전을 선택하세요 (v1/v2/v3): ")
+
+# 해당 버전의 model.pkl 경로 생성
+model_path = f"train_{version}/model.pkl"
+
+# 모델 로드
+with open(model_path, 'rb') as file:
+    model = pkl.load(file)
+
 flie.close()
 
 index = int(input("0~9999 사이의 숫자를 입력하세요: "))

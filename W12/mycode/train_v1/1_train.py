@@ -31,6 +31,8 @@ _INIT_LEARNING_RATE = 0.1          # 초기 학습률
 _LEARNING_RATE_DECAY_FACTOR = 0.5   # 학습률에 대한 감쇠율
 _BATCH_SIZE = 1                  # 한 배치 내 샘플 수
 
+# 오류율이 5% (0.05) 이하가 될 때까지 위 하이퍼파라미터들을 바꿔가며 반복 학습
+_TARGET_VALID_ERROR_RATE = 0.05     # 5% = 0.05
 
 # 학습 과정에 일부 영향을 줄 수도 있는 그 밖의 설정값들
 _MAX_EPOCH = 1000                   # 최대 에포크 횟수 (이 전에라도 검증 오류율이 증가하면 조기 종료될 수 있음)
@@ -308,5 +310,11 @@ with open("train_result.txt", "a", encoding="utf-8") as f:
         f"bestValidErrorRate={bestValidErrorRate:.6f}\t"
         f"MODEL=model.pkl\n"
     )
+
+# 학습 종료 후 검증 오류율이 목표치 이하인지 여부 출력
+if bestValidErrorRate <= _TARGET_VALID_ERROR_RATE:
+    print(f"검증 오류율이 {_TARGET_VALID_ERROR_RATE * 100}% 이하입니다.")
+else:
+    print(f"아직 {_TARGET_VALID_ERROR_RATE * 100}% 이하가 아닙니다.")
 
 # [실습해볼 내용] 모델 학습 스크립트와 성능 평가 실험 스크립트를 따로 분리하기
